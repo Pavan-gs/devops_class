@@ -1,0 +1,125 @@
+Devops
+----------
+
+Combines development & operations tools, technologies & teams
+
+Waterfall model --> Uncertainities, risk, scope of change is limited.
+
+Agile model --> Project is broken into several small iterations. At the end of each iterations a working product is delivered
+
+Devops --> Plan, code, build , Test Integrated with the Deploy, Operate and manage/monitor
+
+Plan  [Code management]-->  Git, Subversion, Jira,
+
+Build --> Maven, Gradle
+
+Test --> Selenium, Junit
+
+Integration --> Jenkins, Bamboo, Hudson
+
+Deploy --> Docker, Kubernetes, puppet, saltstack, chef, Ansible
+Monitoring --> Splunk, Nagios
+
+Stages of Devops
+-----------------------
+
+1. Version Control --> Source Code Management(SCM) Maintaining different versions of the code [Source code management] --> GIT, Subversion
+
+2. Continuous Integration --> Continuous Build, Compile, validate, code reviews, Unit testing, Integration Testing --> Jenkins (2500 plugins)
+
+3. Continuous Delivery --> Continous Testing , Deploying the build appls test servers, perform User Acceptance Test
+
+4. Continuous Deployment --> Deploying tested apps on the production server --> Configuration management & Contenarization
+
+Source Code Management
+-------------------------------------
+
+Centralized Version Control System  -->  Always connected to the network, and if application crashes, entire data is gone. [Subversion]
+
+Distributed Version Control System -->  Local copy is available for everyone, committing changes can be done locally in your local hard drive, 
+				review it and then push it to the central server. [Git]
+
+git init <folder name> # To initiate a local folder as git repository
+
+CI
+---
+
+Developers to make changes to shared repository often, every commit made at the repository level is then reviewed, help identifying bugs
+
+Jenkins    -->   Test (Junit) , Reports (), Notification(), Deployment(Deploy), Compile (Maven), VC (Git, Subversion)
+----------
+
+Jenkins --> Open source automation tool (Java)
+
+CD   --> You will know which commit has caused the error
+----
+
+Continuous Deployment
+----------------------------------
+
+Configuration Management --> Puppet --> For deploying, confguring & managing the servers. [Chef, Ansiblem Saltstack]
+
+Continuous Monitoring --> Splunk, Nagios
+
+Containers   --> Light weight alternatives to VM's  & it uses the host OS--> binary's and the libraries.
+---------------
+
+Docker --> Container technology, it makes it easy to create, deploy & run the applications by using containers. You don't have to pre-allocate any RAM 
+in containers.
+
+Docker image --> read only Template to create containers stored in docker hub or in your local registry.
+
+Docker Containers --> Isolated Appln platform, built from one or more images.
+
+Docker registry --> Storage for images
+
+Docker Swarm --> Provides the clustering capabilities.
+
+Why use Dockers?
+--------------------------
+1. Environment standardisation
+
+2. Build once deploy anywhere
+
+3. Portability
+
+1. Create the docker file
+
+2. Requirements file --> All software needed to run the app
+
+3. docker build  -t name .
+
+4. docker run  -p  8000:5000 name
+
+Master Data Management
+------------------------------------
+
+IBM Infosphere
+Informatica
+Riversand
+SAP
+Tibco EBX
+
+ERP, CRM 
+
+Key factors
+---------------
+
+Unstructured data --> email, articles, catalogues
+
+Meta data
+
+Transactional Data
+
+MDM Strategy
+--------------------
+
+Policy & Governance
+
+Measurement 
+
+
+
+
+
+ 
