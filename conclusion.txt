@@ -49,12 +49,28 @@ pipeline {
 Hive questions
 --------------------
 
-Question 1 - What was our total revenue, cost and profit margin across this dataset?
+Create table for storing transactional records
+-------------------------------------------------
+create table txnrecords(txnno INT, txndate STRING, custno INT, amount DOUBLE, 
+category STRING, product STRING, city STRING, state STRING, spendby STRING)
+row format delimited
+fields terminated by ','
+stored as textfile;
 
-Question 2 - Which customers made more than one order and, of those customers, what was both the average spend and 
-maximum one time spend per account?
+Describe metadata or schema of the table
 
+Count no of records
 
+Count total spending by category of products
 
+Select 10 customers
+
+Create partitioned table
+
+Configure Hive to allow dynamic partitions
+
+Load data into partition table
+
+Find sales based on age group
 
 
